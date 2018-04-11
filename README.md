@@ -1,6 +1,6 @@
 # Zero-Shot Object Detection
 
-This code is the testing side implementation of the following work:
+This code is the testing implementation of the following work:
 
 Shafin Rahman, Salman Khan, and Fatih Porikli. 
 "Zero-Shot Object Detection: Learning to Simultaneously Recognize and Localize Novel Concepts." 

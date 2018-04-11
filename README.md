@@ -1,9 +1,12 @@
 # Zero-Shot Object Detection
 
 This code is the testing side implementation of the following work:
+
 Shafin Rahman, Salman Khan, and Fatih Porikli. 
 "Zero-Shot Object Detection: Learning to Simultaneously Recognize and Localize Novel Concepts." 
 arXiv preprint arXiv:1803.06049 (2018).
+
+[Project Page](https://salman-h-khan.github.io/ProjectPages/ZSD_Arxiv18.html)
 
 
 ## Requirements

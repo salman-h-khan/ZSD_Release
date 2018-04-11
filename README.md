@@ -33,3 +33,35 @@ This code has also been tested with Python 3.6, Keras 2.0.8, OpenCV 3.4.0 and on
 	- `unseen_test.txt`: all the image paths used for testing in the papers. Images are from training and validation set from ImageNet 2017 detection challenge. Every image contains at least one instance of unseen object.
 	- `word_w2v.txt`: word2vec word vectors of 200 classes + bg used in the paper. The ith column represents the 500-dimensional word vectors of the class name of ith row of cls_names.txt.
 	- `word_glo.txt`: GloVe word vectors of 200 classes + background (bg) used in the paper. The ith column represents the 300-dimensional word vectors of the class name of ith row of `cls_names.txt`.
+	
+
+## Running instruction
+To run zero-shot detection on sample input kept in `Dataset/Sampleinput`, simply run detect.py after installing all dependencies like Keras, Tensorflow, OpenCV and placing the pre-trained model in the `Model` directory. This code will generate the output files for each input image to `Dataset/Sampleoutput`.
+
+## Notes on ImageNet experiments
+The resources required to reproduce results of ImageNet related experiments are kept in the directory ImageNet2017. All the images are from `ILSVRC2017_DET.tar.gz` which can be obtained from ImageNet detection challenge 2017 website. For both training and testing of this paper, we have used images from `/ILSVRC/Data/DET/train` and `/ILSVRC/Data/DET/val` of the zipped arxiv `ILSVRC2017_DET.tar.gz`.
+
+## Acknowledgment
+We thank Yann Henon for the following implementation of Faster-RCNN: [keras-frcnn](https://github.com/yhenon/keras-frcnn)
+
+## Trubleshooting
+* If you get the `CUDA_ERROR_OUT_OF_MEMORY` in Tensorflow, place the following snippet after library loadings (the top section) in `detect.py`
+	```python
+	import tensorflow as tf 
+	config = tf.ConfigProto()
+	config.gpu_options.allow_growth = True
+	config.gpu_options.per_process_gpu_memory_fraction = 0.8 #Change it to suit your GPU load
+	K.set_session(tf.Session(config=config)) 
+	```
+	
+* If you want to run the sample code on CPU only, place the following snippet after library loadings (the top section) in `detect.py`
+	```python
+	import tensorflow as tf 
+	num_cores = 2 # 2,4, or 8
+	config = tf.ConfigProto(intra_op_parallelism_threads=num_cores,\
+        inter_op_parallelism_threads=num_cores, allow_soft_placement=True,\
+        device_count = {'CPU' : 1, 'GPU' : 0})
+	K.set_session(tf.Session(config=config))
+	```
+
+

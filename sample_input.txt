@@ -1,0 +1,16 @@
+Dataset/Sampleinput/ILSVRC2012_val_00006346 1
+Dataset/Sampleinput/ILSVRC2012_val_00027783 2
+Dataset/Sampleinput/ILSVRC2012_val_00045478 3 
+Dataset/Sampleinput/ILSVRC2012_val_00048006 4
+Dataset/Sampleinput/n01496331_10373 5
+Dataset/Sampleinput/n02342885_697 6
+Dataset/Sampleinput/n02342885_12175 7
+Dataset/Sampleinput/n02951585_13278 8
+Dataset/Sampleinput/n03271574_5771 9
+Dataset/Sampleinput/n03445777_4984 10
+Dataset/Sampleinput/n03445777_14051 11
+Dataset/Sampleinput/n03584254_1769 12
+Dataset/Sampleinput/n04376876_10661 13
+Dataset/Sampleinput/n04509417_831 14
+Dataset/Sampleinput/n02129604_11850 15
+Dataset/Sampleinput/n07880968_7214 16

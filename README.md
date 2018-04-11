@@ -9,7 +9,7 @@ arXiv preprint arXiv:1803.06049 (2018). ([Project Page](https://salman-h-khan.gi
 
 ## Requirements
 * Download the pre-trained model available on the link below and place it inside the "Model" directory
-[Link to pre-trained model (h5 format)](https://www.dropbox.com/s/v6ueoa1g19bddao/model_frcnn.hdf5?dl=0) 
+([Link to pre-trained model (h5 format)](https://www.dropbox.com/s/v6ueoa1g19bddao/model_frcnn.hdf5?dl=0)) 
 * Other requirements:
 	- Python 2.7 
 	- Keras 2.1.4

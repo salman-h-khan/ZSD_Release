@@ -41,8 +41,6 @@ To run zero-shot detection on sample input kept in `Dataset/Sampleinput`, simply
 ## Notes on ImageNet experiments
 The resources required to reproduce results of ImageNet related experiments are kept in the directory ImageNet2017. All the images are from `ILSVRC2017_DET.tar.gz` which can be obtained from ImageNet detection challenge 2017 website. For both training and testing of this paper, we have used images from `/ILSVRC/Data/DET/train` and `/ILSVRC/Data/DET/val` of the zipped arxiv `ILSVRC2017_DET.tar.gz`.
 
-## Acknowledgment
-We thank Yann Henon for the following implementation of Faster-RCNN: [keras-frcnn](https://github.com/yhenon/keras-frcnn)
 
 ## Trubleshooting
 * If you get the `CUDA_ERROR_OUT_OF_MEMORY` in Tensorflow, place the following snippet after library loadings (the top section) in `detect.py`
@@ -64,4 +62,5 @@ We thank Yann Henon for the following implementation of Faster-RCNN: [keras-frcn
 	K.set_session(tf.Session(config=config))
 	```
 
-
+## Acknowledgment
+We thank Yann Henon for the following implementation of Faster-RCNN: [keras-frcnn](https://github.com/yhenon/keras-frcnn)

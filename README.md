@@ -6,6 +6,7 @@ Shafin Rahman, Salman Khan, and Fatih Porikli.
 "Zero-Shot Object Detection: Learning to Simultaneously Recognize and Localize Novel Concepts." 
 arXiv preprint arXiv:1803.06049 (2018). ([Project Page](https://salman-h-khan.github.io/ProjectPages/ZSD_Arxiv18.html))
 
+![ProblemFigure](https://salman-h-khan.github.io/images/Fig1_ZSD_P.JPG)
 
 ## Requirements
 * Download the pre-trained model available on the link below and place it inside the "Model" directory
@@ -62,6 +63,18 @@ The resources required to reproduce results of ImageNet related experiments are 
         device_count = {'CPU' : 1, 'GPU' : 0})
 	K.set_session(tf.Session(config=config))
 	```
+	
+## Citation 
+### Citation
+If you use this code and model for your research, please consider citing:
+```
+@article{rahman2018zeroshot, 
+title={Zero-Shot Object Detection: Learning to Simultaneously Recognize and Localize Novel Concepts}, 
+author={Rahman, Shafin and Khan, Salman and Porikli, Fatih}, 
+journal={arXiv preprint arXiv:1803.06049}, 
+year={2018} 
+}
+```
 
 ## Acknowledgment
 We thank Yann Henon for the following implementation of Faster-RCNN: [keras-frcnn](https://github.com/yhenon/keras-frcnn)

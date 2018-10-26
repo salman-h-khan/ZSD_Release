@@ -71,7 +71,7 @@ If you use this code and model for your research, please consider citing:
 @article{rahman2018zeroshot, 
 title={Zero-Shot Object Detection: Learning to Simultaneously Recognize and Localize Novel Concepts}, 
 author={Rahman, Shafin and Khan, Salman and Porikli, Fatih}, 
-journal={arXiv preprint arXiv:1803.06049}, 
+journal={Asian Conference on Computer Vision}, 
 year={2018} 
 }
 ```

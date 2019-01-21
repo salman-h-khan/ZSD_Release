@@ -65,7 +65,6 @@ The resources required to reproduce results of ImageNet related experiments are 
 	```
 	
 ## Citation 
-### Citation
 If you use this code and model for your research, please consider citing:
 ```
 @article{rahman2018zeroshot, 
